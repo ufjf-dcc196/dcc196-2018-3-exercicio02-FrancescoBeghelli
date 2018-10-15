@@ -10,8 +10,8 @@ public class EpisodioDbHelper extends SQLiteOpenHelper {
     public final static String DATABASE_NAME = "Episodio.db";
 
 
-    public EpisodioDbHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, DATABASE_NAME, factory, DATABASE_VERSION);
+    public EpisodioDbHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override

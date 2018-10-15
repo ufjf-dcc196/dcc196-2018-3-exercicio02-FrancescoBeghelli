@@ -52,6 +52,8 @@ public class CadastroEpiActivity extends AppCompatActivity {
                 values.put(EpisodioContract.Episodio.COLUMN_NAME_NUM_EP, Integer.parseInt(numEpisodio));
                 values.put(EpisodioContract.Episodio.COLUMN_NAME_NUM_TEMP, Integer.parseInt(numTemporada));
 
+                long id = db.insert(EpisodioContract.Episodio.TABLE_NAME,null,values);
+
                 finish();
             }
         });
